@@ -32,25 +32,6 @@
 - **Cryptocurrency-based payments for premium courses & tutoring sessions**.
 - **Scholarship & Grant Distribution via Smart Contracts**.
 
-## 🛠️ Tech Stack
-### **Frontend (UI/UX)**
-- **React.js / Next.js** (Frontend Framework)
-- **TailwindCSS** (Styling)
-- **Web3.js / Ethers.js** (Blockchain Integration)
-- **Framer Motion** (Animations)
-
-### **Backend & Communication**
-- **Node.js & Express.js** (Server & API)
-- **Socket.IO** (Real-Time Messaging)
-- **WebRTC** (P2P Video Calls & Collaboration)
-- **MongoDB / Firebase** (User Data Storage)
-
-### **Blockchain & Smart Contracts**
-- **Ethereum / Polygon (L2 Scaling)**
-- **Solidity (Smart Contracts for NFTs, Payments, DAO)**
-- **IPFS / Filecoin (Decentralized File Storage)**
-- **The Graph (Blockchain Indexing & Data Querying)**
-
 ### **AI & Automation**
 - **OpenAI / GPT (AI Chatbot & Learning Assistant)**
 - **Whisper API (AI-Based Transcription & Summaries)**
