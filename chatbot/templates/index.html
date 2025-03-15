@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+        #chat-container {
+            width: 500px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        #chat-log {
+            height: 300px;
+            overflow-y: scroll;
+            margin-bottom: 10px;
+            padding: 5px;
+            border: 1px solid #eee;
+        }
+        #question-input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        #submit-button {
+            padding: 8px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chatbot</h1>
+    <div id="chat-container">
+        <div id="chat-log"></div>
+        <input type="text" id="question-input" placeholder="Ask me anything...">
+        <button id="submit-button">Send</button>
+    </div>
+
+    <script>
+        const chatLog = document.getElementById("chat-log");
+        const questionInput = document.getElementById("question-input");
+        const submitButton = document.getElementById("submit-button");
+
+        submitButton.addEventListener("click", function() {
+            const question = questionInput.value;
+            if (question.trim() !== "") {
+                // Display the user's question in the chat log
+                chatLog.innerHTML += `<p><b>You:</b> ${question}</p>`;
+                questionInput.value = ""; // Clear the input
+
+                // Send the question to the server
+                fetch("/get_answer", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded",
+                    },
+                    body: `question=${question}`,
+                })
+                .then(response => response.text())
+                .then(answer => {
+                    // Display the chatbot's answer in the chat log
+                    chatLog.innerHTML += `<p><b>Chatbot:</b> ${answer}</p>`;
+
+                    // Scroll to the bottom of the chat log
+                    chatLog.scrollTop = chatLog.scrollHeight;
+                });
+            }
+        });
+
+        // Allow sending the message with Enter key
+        questionInput.addEventListener("keyup", function(event) {
+            if (event.key === "Enter") {
+                submitButton.click();
+            }
+        });
+    </script>
+</body>
+</html>

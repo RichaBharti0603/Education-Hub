@@ -1,0 +1,4 @@
+What is the Pythagorean theorem?|The Pythagorean theorem states that in a right-angled triangle, the square of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the other two sides. This can be written as: a^2 + b^2 = c^2, where c is the hypotenuse.
+What is the formula for the Pythagorean theorem?|a^2 + b^2 = c^2, where c is the hypotenuse and a and b are the other two sides.
+What is the capital of France?|The capital of France is Paris.
+Who painted the Mona Lisa?|Leonardo da Vinci painted the Mona Lisa.
