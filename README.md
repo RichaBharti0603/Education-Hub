@@ -36,7 +36,7 @@
 - **OpenAI / GPT (AI Chatbot & Learning Assistant)**
 - **Whisper API (AI-Based Transcription & Summaries)**
 - **TensorFlow / PyTorch (Machine Learning Enhancements)**
-- 
+
 🔹 **AI-Driven Adaptive Learning Paths** (Dynamic Course Suggestions Based on User Progress).  
 🔹 **VR-Based Virtual Classrooms** (Immersive Learning with Spatial Audio).  
 🔹 **P2P Skill Marketplace** (Tutors & Students Can Trade Learning Sessions via Smart Contracts).  
